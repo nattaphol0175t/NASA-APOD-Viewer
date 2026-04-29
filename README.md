@@ -1,4 +1,3 @@
-# NASA-APOD-Viewer
 # NASA APOD Viewer 🚀
 
 ASP.NET Core web app that shows NASA Astronomy Picture of the Day.
