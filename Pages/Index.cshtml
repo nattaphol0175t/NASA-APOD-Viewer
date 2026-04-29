@@ -1,0 +1,37 @@
+﻿@page
+@model NasaApodWeb.Pages.IndexModel
+
+<h2>🚀 NASA APOD Viewer</h2>
+
+<form method="post">
+    <select asp-for="Year">
+        @for (int i = 2020; i <= DateTime.Now.Year; i++)
+        {
+            <option value="@i">@i</option>
+        }
+    </select>
+
+    <select asp-for="Month">
+        @for (int i = 1; i <= 12; i++)
+        {
+            <option value="@i">@i</option>
+        }
+    </select>
+
+    <button type="submit">Load</button>
+</form>
+
+<hr />
+
+@foreach (var item in Model.ApodList)
+{
+    <div style="margin-bottom:20px;">
+        <h4>@item.title</h4>
+
+        <a href="/Detail?date=@item.date">
+            <img src="@item.url" width="300" />
+        </a>
+
+        <p>@item.date</p>
+    </div>
+}

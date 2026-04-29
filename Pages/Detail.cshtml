@@ -1,0 +1,20 @@
+@page
+@model NasaApodWeb.Pages.DetailModel
+
+@if (Model.Item != null)
+{
+    <h2>@Model.Item.title</h2>
+    <p>@Model.Item.date</p>
+
+    <img src="@(Model.Item.hdurl ?? Model.Item.url)" 
+         width="600"
+         onerror="this.style.display='none'" />
+
+    <p>@Model.Item.explanation</p>
+}
+else
+{
+    <h3>❌ Data not found</h3>
+}
+
+<a href="/">⬅ Back</a>

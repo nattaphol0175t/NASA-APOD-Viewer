@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "FxsT2ThtGHM=",
+  "success": true,
+  "projectFilePath": "/home/fiw-nattaphol/NasaApodWeb/NasaApodWeb.csproj",
+  "expectedPackageFiles": [
+    "/home/fiw-nattaphol/.nuget/packages/newtonsoft.json/13.0.4/newtonsoft.json.13.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}
